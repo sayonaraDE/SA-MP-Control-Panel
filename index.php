@@ -75,7 +75,7 @@ session_start();
                     </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-theme-sm btn-theme" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-theme-sm btn-theme" data-dismiss="modal">Schließen</button>
 				<!-- <a class="btn btn-theme-sm btn-theme btn-theme-primary" href="account/">Old Member?</a> -->
                 <button class="btn btn-theme-sm btn-theme btn-theme-primary">Login</button>
             </div>
@@ -100,10 +100,10 @@ session_start();
             <nav class="navigation clearfix">
                 <ul class="sf-menu nav">
                     <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#">Forum</a></li>
+                    <li><a href="news.php">News</a></li>
                     <li><a href="#UCP">UCP</a></li>
-                    <li><a href="banlist.php">Banned List</a></li>
-                    <li><a href="playerlist.php">Online Players</a></li>
+                    <li><a href="firststep.php">Erste Schritte</a></li>
+                    <li><a href="help.php">Hilfe</a></li>
                 </ul>
             </nav>
             <!-- /Navigation -->
@@ -127,19 +127,19 @@ session_start();
                             <div class="slide-image"></div>
                             <div class="slide-caption div-cell">
                                 <div class="slide-caption-inner">
-                                    <h1 class="slide-title">Welcome</h1>
-                                    <h3 class="slide-subtitle">CZ California Cops and Robbers</small></h3>
+                                    <h1 class="slide-title">HAGAKURE's Reallife Server</h1>
+                                    <h3 class="slide-subtitle">Herzlich Willkommen!</small></h3>
 									<?php
 									if(!isset($_SESSION['playername']))
 									{
 									?>
-                                    <a class="btn btn-theme btn-theme-primary slide-btn" data-toggle="modal" data-target="#myModal" id="UCP" href="#">login to UCP now!</a>
+                                    <a class="btn btn-theme btn-theme-primary slide-btn" data-toggle="modal" data-target="#myModal" id="UCP" href="#">Jetzt einloggen!</a>
 									<?php
 									}
 									else
 									{
 									?>
-									<a class="btn btn-theme btn-theme-primary slide-btn" data-toggle="modal" data-target="#myModal" id="UCP" href="ucp.php">My ucp</a>
+									<a class="btn btn-theme btn-theme-primary slide-btn" data-toggle="modal" data-target="#myModal" id="UCP" href="ucp.php">Ins Control Panel</a>
 									<?php
 									}
 									?>
@@ -152,9 +152,9 @@ session_start();
                             <div class="slide-caption div-cell">
                                 <div class="container">
                                     <div class="slide-caption-inner">
-                                        <h1 class="slide-title">We Have Features</h1>
-                                        </a><h3 class="slide-subtitle">Come and Join Now!</h3>
-                                        <a class="btn btn-theme btn-theme-primary slide-btn" id="UCP" href="samp://91.121.164.164:7917">Join Server!</a>
+                                        <h1 class="slide-title">Wir spielen echt!</h1>
+                                        </a><h3 class="slide-subtitle">Führe deine Firma, besitze super schnelle Autos!</h3>
+                                        <a class="btn btn-theme btn-theme-primary slide-btn" id="UCP" href="samp://127.0.0.1:777">Trete kostenlos bei!</a>
                                     </div>
                                 </div>
                             </div>
@@ -173,44 +173,44 @@ session_start();
                 <!-- <hr class="page-divider half"/> -->
                 <div class="row">
                     <div class="col-sm-6 col-md-3 feature">
-                        <div class="media" data-animation="fadeInUp" data-animation-delay="100">
-                            <div class="media-object fa fa-calendar"></div>
+                        <div class="media" data-animation="fadeInUp" data-animation-delay="250">
+                            <div class="media-object fa fa-heart"></div>
                             <div class="media-body">
-                                <h4 class="media-heading">Great Event System</h4>
-                                <p>We have lots of event system, to make players much happier.</p>
+                                <h4 class="media-heading">Mit Liebe erstellt</h4>
+                                <p>Das System ist Userfreundlich und bietet Spielern eine perfekte Spielwelt.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 feature">
-                        <div class="media" data-animation="fadeInUp" data-animation-delay="300">
+                        <div class="media" data-animation="fadeInUp" data-animation-delay="500">
                             <div class="media-object fa fa-map-marker"></div>
                             <div class="media-body">
-                                <h4 class="media-heading">San Fierro Upgraded</h4>
-                                <p>Our server map is professionally mapped by professional mapper.</p>
+                                <h4 class="media-heading">Wähle deinen Standort</h4>
+                                <p>Schon am Anfang wählst du aus, in welcher der 3 Städten Du leben möchtest.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 feature">
-                        <div class="media" data-animation="fadeInUp" data-animation-delay="500">
-                            <div class="media-object fa fa-microphone"></div>
+                        <div class="media" data-animation="fadeInUp" data-animation-delay="750">
+                            <div class="media-object fa fa-question-circle"></div>
                             <div class="media-body">
-                                <h4 class="media-heading">Professional Administrator</h4>
-                                <p>We have professional administrators, that can help you with everything on server.</p>
+                                <h4 class="media-heading">Hilfe benötigt?</h4>
+                                <p>Unsere Supporter helfen dir gerne in Sachen, die dir Probleme bereiten. Benutze /support im Spiel.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 feature">
-                        <div class="media" data-animation="fadeInUp" data-animation-delay="500">
-                            <div class="media-object fa fa-users"></div>
+                        <div class="media" data-animation="fadeInUp" data-animation-delay="1000">
+                            <div class="media-object fa fa-sitemap"></div>
                             <div class="media-body">
-                                <h4 class="media-heading">Big Playerbase</h4>
-                                <p>Our server listed on hosted list, so don't worry to feel lonely.</p>
+                                <h4 class="media-heading">Interesse an Franktionen?</h4>
+                                <p>Wir haben genug, wo du dich immer bewerben kannst! Versuche es doch gleich aus!</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center" data-animation="fadeInUp" data-animation-delay="200">
-                    <a class="btn btn-theme" href="samp://91.121.164.164:7917">Come and Join Now!</a>
+                <div class="text-center" data-animation="fadeInUp" data-animation-delay="1250">
+                    <a class="btn btn-theme" href="samp://127.0.0.1:7777">Tritt uns noch heute bei!</a>
                 </div>
             </div>
 
@@ -220,7 +220,7 @@ session_start();
         <!-- Our Team -->
         <section class="page-section speackers" id="speackers">
             <div class="container">
-                <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="0">Our Team<small></small></h3>
+                <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="0">Unser Team<small></small></h3>
                 <div class="row">
 
                     <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700">
@@ -229,8 +229,10 @@ session_start();
                             <div class="caption">
                                 <div class="caption-wrapper div-table">
                                     <div class="caption-inner div-cell">
-                                        <h4 class="caption-title">Shourya</h4>
-                                        <p class="caption-category"><a href="#">Owner</a></p>
+                                        <h4 class="caption-title">HAGAKURE</h4>
+                                        <p class="caption-category"><a href="#">Besitzer</a></p>
+										<p class="caption-category"><a href="#">Programmierer</a></p>
+										<p class="caption-category"><a href="#">Supporter</a></p>
                                         <p class="caption-buttons">
                                             <a href="#" class="btn caption-social"><i class="fa fa-twitter"></i></a>
                                             <a href="#" class="btn caption-social"><i class="fa fa-google-plus"></i></a>
@@ -242,14 +244,14 @@ session_start();
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700">
+                     <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700">
                         <div class="thumbnail do-up no-border">
                             <img src="assets/img/preview/team.png" class="img-responsive" alt="">
                             <div class="caption">
                                 <div class="caption-wrapper div-table">
                                     <div class="caption-inner div-cell">
-                                        <h4 class="caption-title">X337</h4>
-                                        <p class="caption-category"><a href="#">Programmer</a></p>
+                                        <h4 class="caption-title">Sayonara</h4>
+                                        <p class="caption-category"><a href="#">Supporter</a></p>
                                         <p class="caption-buttons">
                                             <a href="#" class="btn caption-social"><i class="fa fa-twitter"></i></a>
                                             <a href="#" class="btn caption-social"><i class="fa fa-google-plus"></i></a>
@@ -261,7 +263,7 @@ session_start();
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700">
+                    <!-- <div class="col-sm-6 col-md-3" data-animation="fadeInUp" data-animation-delay="700">
                         <div class="thumbnail do-up no-border">
                             <img src="assets/img/preview/team.png" class="img-responsive" alt="">
                             <div class="caption">
@@ -298,7 +300,7 @@ session_start();
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -308,27 +310,27 @@ session_start();
         <!-- Price Table -->
         <section class="page-section" id="price">
             <div class="container">
-                <h3 class="section-title text-center">Donate our server and get VIP <small>VIP will get more of features, and more lots of fun.</small></h3>
-                <div class="row">
+                <h3 class="section-title text-center">Demnächst gibt es Premium, Schaue bald vorbei! <small>VIP will get more of features, and more lots of fun.</small></h3> </div></section>
+                <!-- <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="price-table">
                             <div class="price-table-header">
                                 <div class="price-label">
-                                    <h3 class="price-label-title">Basic VIP</h3>
+                                    <h3 class="price-label-title"></h3>
                                 </div>
                                 <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">5</span><span class="price-per"> / month</span>
-                                    <small>You'll get VIP status in-game and forums</small>
+                                    <span class="price-unit">$</span><span class="price-number"></span><span class="price-per"></span>
+                                    <small></small>
                                 </div>
                             </div>
                             <div class="price-table-rows">
-                                <div class="price-table-row">One Free House</div>
-                                <div class="price-table-row">Have access to VIP Lounge</div>
-                                <div class="price-table-row">More Commands</div>
-                                <div class="price-table-row">+3 Tokens & +$1,000,000 In-game money</div>
-                                <div class="price-table-row"><small>Much More...</small></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"><small></small></div>
                                 <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" href="#">Donate</a>
+                                    <a class="btn btn-theme btn-theme-invert" href="#"></a>
                                 </div>
                             </div>
 
@@ -338,22 +340,22 @@ session_start();
                         <div class="price-table">
                             <div class="price-table-header">
                                 <div class="price-label">
-                                    <h3 class="price-label-title">Silver VIP</h3>
+                                    <h3 class="price-label-title"></h3>
                                 </div>
                                 <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">7</span><span class="price-per"> / month</span>
+                                    <span class="price-unit">$</span><span class="price-number"></span><span class="price-per"></span>
                                     <small>You'll get VIP status in-game and forums</small>
                                 </div>
                             </div>
                             <div class="price-table-rows">
-                                <div class="price-table-row">One Free House and Vehicle</div>
-                                <div class="price-table-row">More slots for Vehicle & House</div>
-                                <div class="price-table-row">One Free Garage</div>
-                                <div class="price-table-row">Have Access to buy VIP Vehicle</div>
-                                <div class="price-table-row">+5 Tokens & +$3,000,000 In-game money</div>
-								<div class="price-table-row"><small>Much More...</small></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+								<div class="price-table-row"><small></small></div>
                                 <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" href="#">Donate</a>
+                                    <a class="btn btn-theme btn-theme-invert" href="#"></a>
                                 </div>
                             </div>
 
@@ -363,22 +365,22 @@ session_start();
                         <div class="price-table">
                             <div class="price-table-header">
                                 <div class="price-label">
-                                    <h3 class="price-label-title">GOLD VIP</h3>
+                                    <h3 class="price-label-title"></h3>
                                 </div>
                                 <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">10</span><span class="price-per"> / month</span>
-                                    <small>You'll get VIP status in-game and forums</small>
+                                    <span class="price-unit">$</span><span class="price-number"></span><span class="price-per"></span>
+                                    <small></small>
                                 </div>
                             </div>
                             <div class="price-table-rows">
-                                <div class="price-table-row">Two Free Houses, Garages, and Cars</div>
-                                <div class="price-table-row">Free toys</div>
-                                <div class="price-table-row">Lots of new commands</div>
-                                <div class="price-table-row">Premium gang color</div>
-                                <div class="price-table-row">Score Booster</div>
-								<div class="price-table-row"><small>and much Much More...</small></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+                                <div class="price-table-row"></div>
+								<div class="price-table-row"><small></small></div>
                                 <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" href="#">Donate</a>
+                                    <a class="btn btn-theme btn-theme-invert" href="#"></a>
                                 </div>
                             </div>
 
@@ -386,7 +388,7 @@ session_start();
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Price Table -->
     </div>
     <!-- /Content area -->
@@ -400,7 +402,7 @@ session_start();
                     <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
                     <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
                 </div>
-                <div class="col-sm-12 text-center">&copy; 2015 CZCNR — CZ California Cops and Robbers | Developed by <a href="http://facebook.com/bondowocopz">X337</a></div>
+                <div class="col-sm-12 text-center">&copy; 2016 H:RL — Control Panel V1.0.0 | Developed by HAGAKURE</div>
             </div>
         </div>
 
